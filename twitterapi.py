@@ -48,7 +48,6 @@ for tweet in tweepy.Cursor(api.user_timeline,id='@realDonaldTrump', include_rts=
     f.write("\n")
     print(result)
 
-print('1521001')
 
 for tweet in tweepy.Cursor(api.user_timeline,id='@KylieJenner', include_rts=False, tweet_mode='extended').items(5000):
     tweet = tweet.full_text
