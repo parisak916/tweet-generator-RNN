@@ -13,12 +13,6 @@ from nltk.tokenize import RegexpTokenizer
 import re
 
 
-# In[11]:
-
-
-search= []
-
-
 # In[36]:
 
 
@@ -60,9 +54,6 @@ for tweet in tweepy.Cursor(api.user_timeline,id='@KylieJenner', include_rts=Fals
 f.close()
 
 
-#search.append(items.text)
-#for items in search:
-   # print(items)
 mat = np.array(search)
 
 
@@ -78,8 +69,6 @@ from keras.optimizers import RMSprop
 from keras.utils.data_utils import get_file
 from keras.layers import Dropout
 from keras import optimizers
-
-
 import numpy as np
 import random
 import sys
@@ -173,16 +162,4 @@ model.fit(x, y,
           batch_size=25,
           epochs=60,
           callbacks=[print_callback])
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
