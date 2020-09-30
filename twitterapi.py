@@ -15,16 +15,7 @@ import re
 
 # In[36]:
 
-
-
-APIkey = '2vNuik1WTlVtD5D8itsozBwwb'
-APIsecret = 'cLndlxhloqkeqigXthqBKxpJ0mQld7heEpJdMN4IOtqJCMhPJl'
-AccessToken = '1147309793150951424-kcvOU85YPggvjHtVZ77COVYP78KMCk'
-AccessSecret = '4Gmm40EqgVQTu0wbNoqRGICbuBXCz7gcugRrZ4FfLjuDm'
-
-
-authentication = tweepy.OAuthHandler(APIkey,APIsecret)
-authentication.set_access_token(AccessToken, AccessSecret)
+#Twitter API tokens out for security reasons
 
 api = tweepy.API(authentication)
 f = open("twitterapi.txt", "w")
